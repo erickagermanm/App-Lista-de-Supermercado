@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Supermercado</title> 
+    <link rel="stylesheet" href="styles.css">
+    <meta name= "description" content="Sitio enlistar supermercado">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+
+    <header class= "header-container"> 
+        <img src="imagenes/online.png" alt="Icono supermercado" class="header-logo" width="50%">                           
+        <h1>Lista de supermercado</h1> 
+        
+    </header>
+
+    <main class="container">
+        <h2> Detalle de items</h2>
+        <p> Puedes enlistar items y cantidades de acuerdo a tu nececidad:</p>       
+        
+        <section class="card">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Detalla los items a comprar">
+                <input type="number" id="qty" value="1" min="1">
+                <button onclick="agregarProducto()">Añadir</button>
+            </div>
+        </section>
+
+          <ul id="lista-productos"></ul> 
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
