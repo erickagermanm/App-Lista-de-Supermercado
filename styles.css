@@ -1,0 +1,28 @@
+
+body { font-family: bohemy; background: #f0f2f5; display: flex; flex-direction: column; align-items: center; }
+.container { width: 150%; max-width: 400px; }
+.card { background: white; padding: 22px; border-radius: 15px; box-shadow: 0 10px 17px rgba(0,0,0,0.1); }
+
+.header-container {
+    display: flex;          /* Uso de Flexbox */
+    align-items: center;    /* Permite centrar verticalmente la imagen y el texto */
+    gap: 10px;              /* Espacio para separación entre imagen y texto */
+    background-color: #f6f7f8; 
+}
+
+.header-logo {
+    width: 20%;             /* Mantiene el tamaño deseado de la imagen*/
+   
+}
+
+/* Estilo de la lista */
+ul { padding: 0; width: 40%; } /*Crea el listado con los items que se ingresan */
+li { 
+    background: rgba(249, 187, 187, 0.83); margin-top: 15px; padding: 10px; 
+    display: flex; justify-content: space-between; border-radius: 10px;
+}
+
+/* Permite cambiar de color cuando un item ya se compró */
+.comprado { text-decoration: line-through; opacity: 0.5; background: #d3f5db; }
+
+button { cursor: pointer; border: none; border-radius: 4px; padding: 8px; }
